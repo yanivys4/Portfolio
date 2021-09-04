@@ -72,7 +72,7 @@
 .home{
     display: flex;
     background: url("/images/banner.jpg") no-repeat center;
-    height: 80vh;
+    height: 100vh;
     color: #fff;
     min-height: 500px;
     font-family:'Ubuntu',sans-serif;
