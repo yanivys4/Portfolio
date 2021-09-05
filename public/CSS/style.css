@@ -177,7 +177,10 @@ section{
 .about .about-content .right .text span{
     color: #00CED1;
 }
-.about .about-content .right p{
+.about .about-content .right ul{
+    text-align: justify;
+}
+.about .about-content .right li{
     text-align: justify;
 }
 .about .about-content .right a{

@@ -13,9 +13,6 @@ app.listen(3000,'localhost',()=>{
 });
 
 
-
-
-
 app.get('/',(req,res)=>{
     res.render('index');
 });
