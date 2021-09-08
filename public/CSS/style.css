@@ -117,8 +117,9 @@
 /*all similar content styling code*/
 section{
     padding: 100px 0;
+    font-family: 'Poppins', 'sans-sarif';
+    
 }
-
 section .title{
     position: relative;
     text-align: center;
@@ -128,7 +129,6 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu','sans-serif';
 }
-
 section .title::before{
     content: "";
     position: absolute;
@@ -139,7 +139,6 @@ section .title::before{
     background: #111;
     transform: translateX(-50%);
 }
-
 section .title::after{
     position: absolute;
     bottom: -12px;
@@ -150,37 +149,40 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-
-/*about section styling*/
-.profile, .experience{
-    font-family: 'Poppins', 'sans-sarif';
+ .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
 }
+.content .left{
+    padding-right: 5px;
+}
+.content .right{
+    padding-left: 5px;
+}
+.column{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+}
+
+/*profile section styling*/
 
 .profile .title::after{
     content: "who i am";
 }
-.profile .about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.profile .about-content .middle{
+.profile .content .middle{
     width: 40%;
 }
-
-.profile .about-content .side{
+.profile .content .side{
     width:30%;
 }
 
-.profile .about-content .left{
-    padding-right: 5px;
-}
-.profile .about-content .right{
-    padding-left: 5px;
-}
-
-.profile .about-content .middle img{
+.profile .content .middle img{
     height:300px;
     width: 300px;
     display: block;
@@ -188,22 +190,20 @@ section .title::after{
     margin-right: auto;
     border-radius: 50%;
 }
-
-.profile .about-content .side .text{
+.profile .content .side .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
     margin-left: 3px;
     margin-right: 3px;
 }
-.profile .about-content .side .text span{
+.profile .content .side .text span{
     color: #00CED1;
 }
-.profile .about-content .side p{
+.profile .content .side p{
     text-align: justify;
 }
-
-.profile .about-content .side a{
+.profile .content .side a{
     display: inline-block;
     background: #00CED1;
     color: #fff;
@@ -215,7 +215,7 @@ section .title::after{
     border: 2px solid #00CED1;
     transition: all 0.3s ease;
 }
-.profile .about-content .side a:hover{
+.profile .content .side a:hover{
     color: #00CED1;
     background: none;
 }
@@ -344,8 +344,8 @@ section .title::after{
     margin-top: 0;
     color: inherit;
 }
-.timeline-heading h4 {
-    font-weight: 400;
+.timeline-heading h3 {
+    font-weight: 600;
     padding: 0 15px;
     font-style: bold;
     color: #111;
@@ -424,6 +424,38 @@ section .title::after{
     }
 }
 
+
+/* skills section styling*/
+.skills .title::after{
+    content: "what i provide";
+}
+.skills .content .column{
+    width: 33.3%;
+    flex: 1;
+}
+.skills .skill-title {
+    color: #00CED1;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.skills .first {
+   margin-top: 0px;
+}
+
+.skills .content .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.skills .content  p{
+    text-align: justify;
+}
+.skills ul{
+    list-style: none;
+}
+
 /*responsive media query start*/
 @media (max-width: 1300px){
     .home .max-width{
@@ -431,7 +463,7 @@ section .title::after{
     }
 }
 @media (max-width: 1104px){
-    .profile .about-content .left img{
+    .profile .content .left img{
         height: 200px;
         width: 200px;
     }
@@ -486,19 +518,31 @@ section .title::after{
     .max-width{
         max-width: 800px;
     }
-    .profile .about-content .column{
+    .content .column{
         width: 100%;
+        justify-content: center;
+        margin: 0 auto 60px;
     }
-    .profile .about-content .middle{
+    .profile .content .middle{
         display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
     }
-    .profile .about-content .side{
+    .profile .content .side{
         flex: 100%;
+        text-align: center;
+    }
+    .profile .content .side p{
+        text-align: center;
+    }
+    .skills .content .column{
+        flex: 100%;
+        text-align: center;
         margin: 0 auto 60px;
         justify-content: center;
     }
+    .skills .content .column ul{
+        text-align: center;
+    }
+    
 }
 
 @media (max-width: 690px){
