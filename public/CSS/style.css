@@ -427,7 +427,7 @@ section .title::after{
 
 /* skills section styling*/
 .skills .title::after{
-    content: "what i provide";
+    content: "what i know";
 }
 .skills .content .column{
     width: 33.3%;
