@@ -183,8 +183,8 @@ section .title::after{
 }
 
 .profile .content .middle img{
-    height:300px;
-    width: 300px;
+    height:250px;
+    width: 250px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -455,6 +455,17 @@ section .title::after{
 .skills ul{
     list-style: none;
 }
+.skills .middle{
+    width: 100%;
+    align-content: center;
+}
+.skills .middle img{
+    width: 600px;
+    height: 250px;
+    display:block;
+    margin:auto;
+    margin-bottom: 30px;
+}
 
 /*responsive media query start*/
 @media (max-width: 1300px){
@@ -463,9 +474,13 @@ section .title::after{
     }
 }
 @media (max-width: 1104px){
-    .profile .content .left img{
+    .profile .content .middle img{
         height: 200px;
         width: 200px;
+    }
+    .skills .content .middle img{
+        width: 550px;
+        height: 200px;
     }
 }
 @media (max-width: 991px){
