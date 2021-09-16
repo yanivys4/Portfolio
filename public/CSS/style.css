@@ -118,7 +118,6 @@
 section{
     padding: 100px 0;
     font-family: 'Poppins', 'sans-sarif';
-    
 }
 section .title{
     position: relative;
@@ -197,6 +196,18 @@ section .title::after{
     margin-left: 3px;
     margin-right: 3px;
 }
+.profile .content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.profile .content .row i{
+    font-size: 25px;
+    color: #00CED1;
+}
+.profile .content .row .info{
+    margin-left: 30px;
+}
 .profile .content .side .text span{
     color: #00CED1;
 }
@@ -222,14 +233,16 @@ section .title::after{
 
 
 /*Experience section styling*/
-.experience{
+.experience, .projects{
     color: #fff;
     background: #111;
 }
-.experience .title::before{
+.experience .title::before,
+.projects .title::before{
     background: #fff;
 }
-.experience .title::after{
+.experience .title::after,
+.projects .title::after{
     background: #111;
     content: "timeline";
 }
@@ -466,6 +479,129 @@ section .title::after{
     margin:auto;
     margin-bottom: 30px;
 }
+
+/* projects section styling*/
+.projects .title::after{
+    content: "hands on";
+}
+
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+.projects .carousel .card:hover{
+    background: #00CED1;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00CED1 ;
+    transition: all 0.3s ease;
+}
+.projects .carousel .card:hover img{
+    border-color: #fff;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #00CED1!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #00CED1!important;
+}
+
+/* contact section styling*/
+.contact .content{
+    
+    
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+.contact .title::after{
+    content:"get it touch";
+}
+.contact .content .column{
+    width: calc(50% - 30px);
+    justify-content: center;
+    align-items: center;
+}
+.contact .content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .content .left .icons{
+    margin: 10px ;
+    
+}
+.contact .content .row{
+    display: inline-flex;
+    margin: 5px;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.contact .content .row .info{
+    margin-left: 30px;
+}
+.contact .content .row i{
+    font-size: 25px;
+    color: #00CED1;
+}
+
+.contact .content .info .head{
+    font-weight: 500;
+}
+.contact .content .info a{
+    color:#00CED1;
+}
+.contact .content .info .sub-title{
+    color: #333;
+}
+
+
+
+
+
+
 
 /*responsive media query start*/
 @media (max-width: 1300px){

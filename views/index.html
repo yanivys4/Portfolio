@@ -6,6 +6,9 @@
         <title>Yaniv Shoham Portfolio</title>
         <link rel="stylesheet" href="/CSS/style.css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
         <script src="/JS/script.js"></script>
     </head>
     <body>
@@ -60,22 +63,34 @@
                     </div>
                     <div class="column side right">
                         <div class="text">Details</div>
-                        <p>
-                            <b>Name:</b>
-                            <br>
-                            Yaniv Shoham
-                            <br>
-                            <b>Age:</b>
-                            <br>
-                            29
-                            <br>
-                            <b>Location:</b>
-                            <br>
-                            Jerusalem, Israel
-
-                        </p>
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Yaniv Shoham</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-birthday-cake"></i>
+                                <div class="info">
+                                    <div class="head">Age</div>
+                                    <div class="sub-title">29</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="info">
+                                    <div class="head">Location</div>
+                                    <div class="sub-title">Jerusalem, Israel</div>
+                                </div>
+                            </div>
+                        </div>
                         <a href="#">Download CV</a>
                     </div>
+                    
+                </div>
+                    
                 </div>
             </div>
             </section>
@@ -211,5 +226,70 @@
                 </div>
             </div>
             </section>
+
+        <!-- projects section start-->
+        <section class="projects" id="projects">
+            <div class="max-width">
+                <h2 class="title">My projects</h2>
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class="box">
+                            <img src="/images/InfoPark.jpg" alt="infopark">
+                            <div class="text">InfoPark - Android App</div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="/images/portfolio.jpg" alt="portfolio">
+                            <div class="text">Portfolio - Website</div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="/images/GoldMiner.jpg" alt="infopark">
+                            <div class="text">Gold Miner - PC Game</div>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section start-->
+        <section class="contact" id="contact">
+            <div class="max-width">
+                <h2 class="title">Contact me</h2>
+                <div class="content">
+                    <div class="column left">
+                        <div class="icons">
+                            <div class="row">
+                                <i class="fas fa-user"></i>
+                                <div class="info">
+                                    <div class="head">Name</div>
+                                    <div class="sub-title">Yaniv Shoham</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fas fa-envelope"></i>
+                                <div class="info">
+                                    <div class="head">Email</div>
+                                    <div class="sub-title">yanivys4@gmail.com</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <i class="fab fa-linkedin"></i>
+                                <div class="info">
+                                    <div class="head">LinkedIn</div>
+                                    <a target="blank" href="https://www.linkedin.com/in/yaniv-shoham-0a5811182">link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </body>
 </html>
