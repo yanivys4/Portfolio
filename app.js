@@ -8,8 +8,9 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 app.use('/static', express.static(path.join(__dirname + './public')));
 app.use(express.static(path.join(__dirname, 'public')));
-app.listen(3000,'localhost',()=>{
-    console.log("listening for requests on localhost 3000");
+const port = process.env.PORT || 3000;
+app.listen(port,()=>{
+    console.log("listening for requests");
 });
 
 
