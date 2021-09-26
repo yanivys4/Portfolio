@@ -619,7 +619,7 @@ section .title::after{
     overflow: auto;
 }
 .contact .title::after{
-    content:"get it touch";
+    content:"get in touch";
 }
 .projects .content .column,
 .contact .content .column{
