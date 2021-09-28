@@ -218,10 +218,7 @@ section .title::after{
     height: 65px;
     align-items: center;
 }
-.profile .content .row i{
-    font-size: 25px;
-    color: #00CED1;
-}
+
 .profile .content .row .info{
     margin-left: 30px;
 }
@@ -632,7 +629,6 @@ section .title::after{
 .contact .content .info .head{
     font-size: 20px;
     font-weight: 600;
-    margin-bottom: 2px;
 }
 
 .contact .content .row{
@@ -648,9 +644,12 @@ section .title::after{
     margin-left: 30px;
 }
 
+.profile .content .row i,
 .contact .content .row i{
+    position: absolute;
     font-size: 30px;
     color: #00CED1;
+    margin-right: 250px;
 }
 .contact .content .info a{
     font-size: 18px;

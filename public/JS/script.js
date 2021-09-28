@@ -1,3 +1,5 @@
+const yearOfBirth = 1992;
+
 jQuery(function(){
     $(window).on("scroll",function(){
         if(this.scrollY > 20){
@@ -11,7 +13,8 @@ jQuery(function(){
             $('.scroll-up-btn').removeClass("show");
         }
     });
-
+    let CurrentDate = new Date();
+    $('#age').text(CurrentDate.getFullYear() - yearOfBirth);
     // slide-up script
     $('.scroll-up-btn').on("click",function(){
         $('html').animate({scrollTop: 0});
