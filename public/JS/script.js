@@ -53,5 +53,13 @@ jQuery(function(){
             }
         }
     });
+    // Add click event to all list togggles
+    $(".list-toggle").on("click",function() {
+        // Move up DOM tree to nearest list
+        // Toggle collapsed and expanded classes
+        $(this).closest("ul").toggleClass("collapsed").toggleClass("expanded");
+        $(this).find("i").toggleClass("fas fa-ellipsis-h").toggleClass("fas fa-minus");
+       
+    });
 });
 

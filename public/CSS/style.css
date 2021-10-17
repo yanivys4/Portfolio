@@ -215,10 +215,16 @@ section .title::after{
 }
 .profile .content .row{
     display: flex;
+    text-align: center;
+    margin: 3px;
     height: 65px;
     align-items: center;
+    justify-content: center;
 }
-
+.profile .content .row i{
+    font-size: 25px;
+    color: #00CED1;
+}
 .profile .content .row .info{
     margin-left: 30px;
 }
@@ -502,6 +508,9 @@ section .title::after{
     margin:auto;
     margin-bottom: 30px;
 }
+.skills i{
+    font-size: 12px;
+}
 
 /* projects section styling*/
 .projects .title::after{
@@ -673,9 +682,32 @@ footer span{
     color: #fff;
 }
 
-
-
-
+ul.collapsed > li:nth-child(n+6) {
+    display: none;
+  }
+  
+  ul.collapsed > .list-toggle > span.collapse, ul.expanded > .list-toggle > span.expand {
+    display: none;
+  }
+  
+  .list-toggle {
+    width: 100px;
+    line-height: 0.5em;
+    margin-top: 5px;
+    color: #00CED1;
+    font-size: 20px;
+  }
+  .up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  ul.expanded > .list-toggle {
+    color: red;
+  }
 
 /*responsive media query start*/
 @media (max-width: 1300px){

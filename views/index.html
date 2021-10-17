@@ -9,6 +9,7 @@
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
         <script src="/JS/script.js"></script>
     </head>
@@ -57,7 +58,7 @@
                         I am a graduated B.Sc. in Computer Science with specializations in Machine Learning,
                         Computer vision and deep learning.                       
                         My greatest dream is to work on the most cutting edge technology in the field 
-                        of Mobile Applications.
+                        of Mobile and Web Applications.
                         </p>
                         
                     </div>
@@ -89,7 +90,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#">Download CV</a>
+                        <a href="/PDF/CV.pdf" download="Yaniv Shoham-CV" >Download CV</a>
                     </div>
                     
                 </div>
@@ -181,7 +182,7 @@
                     
                     <div class="column left">
                         <h3 >Programming</h3>
-                        <ul>
+                        <ul class="collapsed">
                             <li class="skill-title first">Programming languages</li>
                             <li>Java</li>
                             <li>Python</li>
@@ -189,6 +190,11 @@
                             <li>C++</li>
                             <li>JavaScript</li>
                             <li>OOP in relevant languages</li>
+                            <div class='list-toggle' id="programming">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </ul>
+                        <ul class="collapsed">
                             <li class="skill-title">Andorid</li>
                             <li>Intents</li>
                             <li>Activities</li>
@@ -200,18 +206,26 @@
                             <li>Retrofit</li>
                             <li>Engineering Maintainable Android Apps
                             </li>
+                            <div class='list-toggle'>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </ul>  
+                        <ul class="collapsed">
                             <li class="skill-title">Web</li>
                             <li>NodeJs</li>
                             <li>Spring</li>
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>Bootstrap</li>
+                            <div class='list-toggle'>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                        </ul>
+                        <ul class="collapsed">
                             <li class="skill-title">SQL</li>
                             <li>MongoDB</li>
                             <li>SQLite</li>
-
-                        </ul>
-                        
+                        </ul>  
                     </div>
                     <div class="column middle">
                         <h3>IDE and Frameworks</h3>
@@ -232,7 +246,6 @@
                         <ul>
                             <li>Hebrew - native</li>
                             <li>English - fluent</li>
-                            
                         </ul>
                     </div>
                 </div>
