@@ -802,8 +802,8 @@ ul.collapsed > li:nth-child(n+6) {
     .profile .content .row{
         display: flex;
         text-align: center;
-        margin: 3px;
-        height: 65px;
+        margin: 5px;
+        height: 55px;
         align-items: center;
         justify-content: center;
     }
@@ -825,12 +825,18 @@ ul.collapsed > li:nth-child(n+6) {
     }
 }
 
+@media(max-width: 595px){
+    .skills .max-width .content .middle img{
+        display: none;
+}
+
+}
 @media (max-width: 500px){
     .home .home-content .text2{
         font-size: 50px;
     }
     .home .home-content .text3{
         font-size: 27px;
-    
     }
+    
 }
