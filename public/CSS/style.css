@@ -94,9 +94,6 @@ html{
     opacity: 1;
     pointer-events: auto;
 }
-.scroll-up-btn i {
-    color: #fff;
-}
 /* home section styling */
 .home{
     display: flex;
