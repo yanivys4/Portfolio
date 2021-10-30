@@ -13,7 +13,6 @@ app.listen(port,()=>{
     console.log("listening for requests");
 });
 
-
 app.get('/',(req,res)=>{
     res.render('index');
 });
