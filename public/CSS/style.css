@@ -92,7 +92,7 @@ html{
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: visible;
 }
 /* home section styling */
 .home{
