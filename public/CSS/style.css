@@ -508,8 +508,12 @@ section .title::after{
     margin:auto;
     margin-bottom: 30px;
 }
+.skills .list-toggle{
+    align-content: center;
+    text-align: center;
+}
 .skills i{
-    font-size: 12px;
+    font-size: 15px;
 }
 
 /* projects section styling*/
@@ -797,8 +801,13 @@ ul.collapsed > li:nth-child(n+6) {
         justify-content: center;
     }
     .skills .content .column ul{
-        text-align: center;
+        justify-content: center;
     }
+    .skills .content .list-toggle{
+        display:-webkit-inline-flex;
+        justify-content: center;
+    }
+    
     .profile .content .row{
         display: flex;
         text-align: center;
