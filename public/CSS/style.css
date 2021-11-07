@@ -91,7 +91,7 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn .show{
+.scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: visible;
