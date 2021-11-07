@@ -1,6 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
+const cors = require('cors')
 const app = express();
+app.use(cors());
 const path = require('path');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -17,8 +19,3 @@ app.get('/',(req,res)=>{
     res.render('index');
 });
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
