@@ -64,6 +64,8 @@ html{
     color: #fff;
 }
 
+
+
 /*menu btn styling*/
 .menu-btn{
     color: #fff;
@@ -89,7 +91,7 @@ html{
     pointer-events: none;
     transition: all 0.3s ease;
 }
-.scroll-up-btn.show{
+.scroll-up-btn .show{
     bottom: 30px;
     opacity: 1;
     pointer-events: visible;
@@ -123,6 +125,16 @@ html{
 .home .home-content .text3 span{
     color: #00CED1;
     font-weight: 500;
+}
+
+.home .views {
+    color:#00CED1;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    display: inline-block;
+    justify-content: center;
+    margin-right: 3px;
 }
 
 
@@ -631,8 +643,7 @@ section .title::after{
 .contact .title::after{
     content:"get in touch";
 }
-.projects .content .column,
-.contact .content .column{
+.projects .content .column{
     width: calc(50% - 30px);
     justify-content: center;
     align-items: center;
@@ -657,8 +668,7 @@ section .title::after{
     margin-left: 30px;
 }
 
-.profile .content .row i,
-.contact .content .row i{
+.profile .content .row i{
     position: absolute;
     font-size: 30px;
     color: #00CED1;
@@ -674,6 +684,15 @@ section .title::after{
     font-size: 18px;
     font-weight: 300;
     color: #333;
+}
+.contact .content .column{
+    display: inline-block;
+    justify-content: center;
+}
+.contact .content .column i{
+    font-size: 30px;
+    color: #00CED1;
+    margin: 10px;
 }
 
 /* footer styling */
