@@ -9,15 +9,9 @@ app.set('view engine', 'html');
 app.use('/static', express.static(path.join(__dirname + './public')));
 app.use(express.static(path.join(__dirname, 'public')));
 const port = process.env.PORT || 3000;
-const cors = require('cors');
-app.use(cors({
-    origin: 'https://www.section.io'
-}));
 app.listen(port,()=>{
     console.log("listening for requests");
 });
-
-
 
 app.get('/',(req,res)=>{
     res.render('index');
