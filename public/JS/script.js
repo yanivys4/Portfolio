@@ -61,7 +61,7 @@ $(window).on('load', function() {
             // Move up DOM tree to nearest list
             // Toggle collapsed and expanded classes
             $(this).closest("ul").toggleClass("collapsed").toggleClass("expanded");
-            $(this).find("i").toggleClass("fas fa-ellipsis-h").toggleClass("fas fa-minus");
+            $(this).find("i").toggleClass("bi bi-three-dots").toggleClass("bi bi-dash-lg");
     
         });
     });
