@@ -1,8 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const cors = require('cors');
 const app = express();
-app.use(cors());
 const path = require('path');
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
