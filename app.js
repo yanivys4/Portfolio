@@ -13,7 +13,11 @@ app.listen(port,()=>{
     console.log("listening for requests");
 });
 
+const cors = require('cors');
+app.use(cors({
+    origin: 'https://www.section.io'
+}));
+
 app.get('/',(req,res)=>{
     res.render('index');
 });
-
