@@ -67,7 +67,7 @@ html{
 /*menu btn styling*/
 .menu-btn{
     color: #fff;
-    font-size: 23px;
+    font-size: 30px;
     cursor: pointer;
     display: none;
 }
@@ -525,7 +525,8 @@ section .title::after{
     text-align: center;
 }
 .skills i{
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: 900;
 }
 
 /* projects section styling*/
