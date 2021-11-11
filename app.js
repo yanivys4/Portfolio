@@ -21,13 +21,13 @@ app.get('/',(req,res)=>{
     
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
-
     View.findOneAndUpdate(filter, update, {
     returnOriginal: false},function(err,view){
         if(err){
             console.log(err);
         }
         else{
+            console.log(req.ip);
             res.render('index',{views: view.viewsCounter});
         }
     });
