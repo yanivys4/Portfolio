@@ -25,7 +25,7 @@ $(window).on('load', function() {
         // toggle menu/navbar script
         $('.menu-btn').on("click", function () {
             $('.navbar .menu').toggleClass("active");
-            $('.menu-btn i').toggleClass("active");
+            $('.menu-btn i').toggleClass("bi bi-list").toggleClass("bi bi-x");
         });
     
         // typing animetion script

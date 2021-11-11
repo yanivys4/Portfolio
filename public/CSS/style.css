@@ -64,8 +64,6 @@ html{
     color: #fff;
 }
 
-
-
 /*menu btn styling*/
 .menu-btn{
     color: #fff;
@@ -99,7 +97,7 @@ html{
 /* home section styling */
 .home{
     display: flex;
-    padding: 0px;
+    padding: 30px 0;
     background: url("/images/banner.jpg") no-repeat center;
     background-size: cover;
     height: 100vh;
@@ -130,8 +128,10 @@ html{
 .home .views {
     color:#00CED1;
     position: absolute;
-    right: 100px;
-    top: 100px;
+    padding:120px 100px;
+    right: 0;
+    top: 0;
+    height: auto;
     display: inline-block;
     justify-content: center;
     margin-right: 3px;
@@ -835,7 +835,9 @@ ul.collapsed > li:nth-child(n+6) {
         align-items: center;
         justify-content: center;
     }
-    
+    .home .views{
+        padding-right: 45px;
+    }
 }
 
 @media (max-width: 690px){
@@ -866,5 +868,4 @@ ul.collapsed > li:nth-child(n+6) {
     .home .home-content .text3{
         font-size: 27px;
     }
-    
 }
