@@ -21,6 +21,10 @@ app.get('/',(req,res)=>{
     
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
+    // if(req.ip != '::ffff:127.0.0.1'){
+        
+    // }
+    /*
     View.findOneAndUpdate(filter, update, {
     returnOriginal: false},function(err,view){
         if(err){
@@ -31,5 +35,7 @@ app.get('/',(req,res)=>{
             res.render('index',{views: view.viewsCounter});
         }
     });
+    */
+    res.render('index',{views: 0});
 
 });
