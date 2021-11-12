@@ -19,6 +19,7 @@ mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.get('/',(req,res)=>{
     let userAgent = req.get('User-Agent');
+    console.log(userAgent);
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
     let numOfViews = 0;
