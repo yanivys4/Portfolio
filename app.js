@@ -21,6 +21,7 @@ app.get('/',(req,res)=>{
     
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
+    console.log(req.ip);
     // if(req.ip != '::ffff:127.0.0.1'){
         
     // }
