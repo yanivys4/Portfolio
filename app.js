@@ -19,7 +19,6 @@ mongoose.connect(dbUri, { useNewUrlParser: true, useUnifiedTopology: true })
 
 app.get('/',(req,res)=>{
     let userAgent = req.get('User-Agent');
-    console.log(userAgent);
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
     let numOfViews = 0;
@@ -29,14 +28,12 @@ app.get('/',(req,res)=>{
             console.log(err);
         }else{
             numOfViews = view.viewsCounter;
-            // if the ip != ::ffff:127.0.0.1 which is aws health check --> append counter
+            // if the userAgent != ELB-HealthChecker/2.0 which is aws health check --> append counter
             if(userAgent != 'ELB-HealthChecker/2.0'){
-                console.log("here");
                 View.updateOne(filter,update,{returnOriginal: false}, function(err,view2){
                     if(err){
                         console.log(err);
                     }else{
-                        console.log(view2);
                         res.render('index',{views: numOfViews});
                     }
                 });
