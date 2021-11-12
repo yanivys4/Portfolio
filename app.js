@@ -45,23 +45,4 @@ app.get('/',(req,res)=>{
             }
         }
     });
-
-
-
-
-    
-    
-    View.findOneAndUpdate(filter, update, {
-    returnOriginal: false},function(err,view){
-        if(err){
-            console.log(err);
-        }
-        else{
-            console.log(req.ip);
-            res.render('index',{views: view.viewsCounter});
-        }
-    });
-    
-    res.render('index',{views: 0});
-
 });
