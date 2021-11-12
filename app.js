@@ -22,10 +22,35 @@ app.get('/',(req,res)=>{
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
     console.log(req.ip);
-    // if(req.ip != '::ffff:127.0.0.1'){
-        
-    // }
-    /*
+    let numOfViews = 0;
+    // Get number of Views
+    View.findOne({},function(err,view){
+        if(err){
+            console.log(err);
+        }else{
+            numOfViews = view.viewsCounter;
+            // if the ip != ::ffff:127.0.0.1 which is aws health check --> append counter
+            if(req.ip != '::ffff:127.0.0.1'){
+                View.updateOne(filter,update,{returnOriginal: false}, function(err,view){
+                    if(err){
+                        console.log(err);
+                    }else{
+                        console.log("health check!");
+                        res.render('index',{views: view.viewsCounter});
+                    }
+                });
+            }
+            else{
+                res.render('index',{views: numOfViews});
+            }
+        }
+    });
+
+
+
+
+    
+    
     View.findOneAndUpdate(filter, update, {
     returnOriginal: false},function(err,view){
         if(err){
@@ -36,7 +61,7 @@ app.get('/',(req,res)=>{
             res.render('index',{views: view.viewsCounter});
         }
     });
-    */
+    
     res.render('index',{views: 0});
 
 });
