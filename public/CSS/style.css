@@ -481,7 +481,7 @@ section .title::after{
 
 /* skills section styling*/
 .skills .title::after{
-    content: "what i know";
+    content: "my knowledge";
 }
 .skills .content .column{
     width: 33.3%;
@@ -539,6 +539,7 @@ section .title::after{
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
+    height: 365px;
     transition: all 0.3s ease;
 
 }
