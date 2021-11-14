@@ -21,6 +21,7 @@ app.get('/',(req,res)=>{
     const filter = {};
     const update = { $inc: { viewsCounter: 1 } };
     let numOfViews = 0;
+    console.log(userAgent);
     // Get number of Views
     View.findOne({},function(err,view){
         if(err){
