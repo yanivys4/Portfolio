@@ -125,17 +125,6 @@ html{
     font-weight: 500;
 }
 
-.home .views {
-    color:#00CED1;
-    position: absolute;
-    padding:120px 100px;
-    right: 0;
-    top: 0;
-    height: auto;
-    display: inline-block;
-    justify-content: center;
-    margin-right: 3px;
-}
 
 
 .home .home-content a:hover{
@@ -836,9 +825,6 @@ ul.collapsed > li:nth-child(n+6) {
         height: 55px;
         align-items: center;
         justify-content: center;
-    }
-    .home .views{
-        padding-right: 45px;
     }
 }
 
