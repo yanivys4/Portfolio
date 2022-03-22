@@ -662,9 +662,9 @@ section .title::after{
 .profile .content .row i{
     position: absolute;
     font-size: 30px;
+    left:15%;
     color: #00CED1;
-    margin-right: 250px;
-    overflow-x: hidden; 
+     
 }
 .contact .content .info a{
     font-size: 18px;
